@@ -1,0 +1,17 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.index__header {
+
+}
+
+.index__body {
+    
+}
+
+.index_footer {
+
+}
