@@ -18,7 +18,7 @@ create table paises (
 );
 
 create table empresas (
-    id_empresa bigint primary key not null auto_increment,
+    id_empresa bigint primary key not null AUTO_INCREMENT,
     nm_fantasia varchar(200) not null,
     nm_razao_social varchar(200) not null,
     tx_cnpj varchar(14) not null,
@@ -27,4 +27,10 @@ create table empresas (
     tx_cep text,
     tx_telefone text,
     tx_email text,
+);
+
+CREATE TABLE `arquivos` ( 
+    `id_arquivo` BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+    `tx_legenda` VARCHAR(100) , 
+    `tx_arquivo` BLOB NOT NULL , 
 );

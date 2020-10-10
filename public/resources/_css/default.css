@@ -1,17 +1,54 @@
+body {
+    font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+}
+
+form input {
+    padding: 1%;
+    margin: 1%;
+    border: 0 solid white;
+    border-bottom:1px solid thistle;
+}
+
+input:focus {
+    outline: none !important;
+    border-bottom:1px solid cornflowerblue;
+    box-shadow: 0 1px 1px cornflowerblue;
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.index__header {
-
+.flex-column-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
-.index__body {
-    
+.arquivo-upload label {
+    padding: 1%;
 }
 
-.index_footer {
+.arquivo-upload input {
+    padding: 1%;
+}
 
+.legenda-upload label {
+    padding: 1%;
+}
+
+.legenda-upload input {
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.imagem {
+    margin: 1%;
+}
+
+.imagem img {
+    max-width: 300px;
+    max-height: 300px;
 }
