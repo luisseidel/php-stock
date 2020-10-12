@@ -1,6 +1,6 @@
 <div id="form-insert">
     <form method="POST" 
-        action="./public/app/_components/upload/uploadDAO.php"
+        action="./public/app/pages/upload/uploadDAO.php"
         enctype="multipart/form-data">
         
         <div class="flex-column-start">
@@ -15,7 +15,7 @@
 </div>
 
 <div id="flex-container">
-    <?php include './public/app/_components/upload/loadImages.php' ?>
+    <?php include './public/app/pages/upload/loadImages.php' ?>
 </div>
 
 
