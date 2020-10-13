@@ -1,6 +1,6 @@
 <?php
 
-    require_once './public/app/db-connection.php';
+    require_once 'db_connection.php';
 
     session_start();
     
@@ -26,7 +26,7 @@
                         $_SESSION['logado'] = true;
                         $_SESSION['id_usuario'] = $dados['id_usuario'];
 
-                        header('Location: ./public/app/pages/home/home.php');
+                        header('Location: ./public/app/pages/session/home.php');
                     else:
                         $erros[] = "<li>Usuário e senha não conferem</li>";
                     endif;
