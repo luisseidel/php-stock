@@ -23,6 +23,7 @@
 
                     if (mysqli_num_rows($resultado) == 1):
                         $dados = mysqli_fetch_array($resultado);
+                        
                         $_SESSION['logado'] = true;
                         $_SESSION['id_usuario'] = $dados['id_usuario'];
 
@@ -37,7 +38,7 @@
                 endif;
 
             endif;
-
+        mysqli_close($dbconnect);
     }
 ?>
 

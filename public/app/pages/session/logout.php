@@ -4,7 +4,5 @@
     session_unset();
     session_destroy();
 
-    $dir    = '/';
-    $files1 = scandir($dir);
-    print_r($files1);
+    header('Location: ./index.php');
 ?>
