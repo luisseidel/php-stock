@@ -13,30 +13,18 @@
             if(empty($login) or empty($senha)):
                 $erros[] = "<li>O campo login/senha precisa(m) ser preenchido(s)!</li>";
             else:
-                $sql = "SELECT u.login FROM usuarios u WHERE u.login = '$login' ";
+                $sql = "SELECT u.* FROM usuarios u WHERE u.login = '$login' ";
                 $resultado = mysqli_query($dbconnect, $sql);
 
-                if (mysqli_num_rows($resultado) > 0):
-                    $senha = md5($senha);
-                    $sql = "SELECT u.login FROM usuarios u WHERE u.login = '$login' AND u.senha = '$senha' ";
-                    $resultado = mysqli_query($dbconnect, $sql);
-
-                    if (mysqli_num_rows($resultado) == 1):
-                        $dados = mysqli_fetch_array($resultado);
-                        
+                while($row = mysqli_fetch_array($resultado)) {
+                    if (password_verify($senha, $row['senha'])) {
                         $_SESSION['logado'] = true;
-                        $_SESSION['id_usuario'] = $dados['id_usuario'];
+                        $_SESSION['id_usuario'] = $dados['id_usuario'];                            
+                        header('Location: ./pages/home.php');
+                    }
+                }
 
-                        header('Location: ./public/app/pages/session/home.php');
-                    else:
-                        $erros[] = "<li>Usuário e senha não conferem</li>";
-                    endif;
-
-
-                else:
-                    $erros[] = "<li>Usuário inexistente</li>";
-                endif;
-
+                $erros[] = "<li>Usuário e senha não conferem</li>";
             endif;
         mysqli_close($dbconnect);
     }
