@@ -1,9 +1,9 @@
-<?php include_once "./includes/header.php" ?>
+<?php include_once "../includes/header.php" ?>
 
     <div class="row">
         <div class="col s12 m6 push-m3">
             <table class="striped">
-                <h3>Cadastro de Usuários</h3>
+                <h3 class="light">Lista de Usuários</h3>
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -25,9 +25,9 @@
                 </tbody>
             </table>
 
-            <a href="" class="btn">Adicionar</a>
+            <a href="./edit.php" class="btn">Adicionar</a>
 
         </div>
     </div>
 
-<?php include_once "./includes/footer.php" ?>
+<?php include_once "../includes/footer.php" ?>

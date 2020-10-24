@@ -40,15 +40,25 @@
         }
     ?>
 
-    <form action="<?php echo $_SERVER['PHP_SELF'];?>"
-        method="POST">
+<div class="row">
+    <div class="col s12 m6 push-m3">
+        <h3 class="light">Acesse</h3>
 
-        <input type="text" placeholder="Login (email@email.com)" name="login">
-        <input type="password" placeholder="Senha" name="senha">
+        <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
+                <div class="input-field col s12">
+                    <input type="text" name="login" id="login">
+                    <label for="login">Login</label>
+                </div>
 
-        <button type="submit" name="btn-entrar">
-            Login
-            <i class="fas fa-sign-in-alt"></i>
-        </button>
-    </form>
+                <div class="input-field col s12">
+                    <input type="password" name="senha" id="senha">
+                    <label for="senha">Senha</label>
+                </div>
+        
+                <button type="submit" name="entrar" class="btn"> entrar
+                    <i class="material-icons">login</i>
+                </button>
+        </form>
+
+    </div>
 </div>

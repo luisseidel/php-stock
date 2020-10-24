@@ -13,7 +13,7 @@
     
         <h1>welcome</h1>
 
-        <a href="list-usuarios.php">Cadastro Usuários</a>
+        <a href="./usuarios/list.php">Cadastro Usuários</a>
 
 <?php include_once "./includes/footer.php" ?>
     
