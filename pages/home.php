@@ -11,9 +11,7 @@
 
 <?php include_once "./includes/header.php" ?>
     
-        <h1>welcome</h1>
-
         <a href="./usuarios/list.php">Cadastro Usuários</a>
 
+
 <?php include_once "./includes/footer.php" ?>
-    

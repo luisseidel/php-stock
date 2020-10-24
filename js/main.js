@@ -1,3 +1,6 @@
-function add(a, b) {
-    return a+b;
-}
+$(document).ready(function(){
+  
+    $('.sidenav').sidenav();
+    $(".dropdown-trigger").dropdown();
+
+});

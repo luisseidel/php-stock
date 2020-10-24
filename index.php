@@ -1,3 +1,7 @@
-    <?php include_once "./pages/includes/header.php" ?>
+<?php include_once "./pages/includes/index-header.php" ?>
+
+<main>
     <?php include_once './pages/session/login.php' ?>
-    <?php include_once "./pages/includes/footer.php" ?>
+</main>
+
+<?php include_once "./pages/includes/index-footer.php" ?>

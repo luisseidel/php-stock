@@ -1,0 +1,28 @@
+header .nav-wrapper {
+    background-color: #01252C;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: black;
+    color: #81e291 !important;
+}
+
+main input {
+    color: white;
+}
+
+.page-footer {
+    background-color: #01252C !important;
+    color: #81e291 !important;
+}
+
+.page-footer a {
+    color: #81e291 !important;
+}

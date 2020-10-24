@@ -4,7 +4,7 @@
 
     session_start();
     
-    if (isset($_POST['btn-entrar'])){
+    if (isset($_POST['entrar'])){
         $erros = array();
 
         $login = mysqli_escape_string($dbconnect, $_POST['login']);
