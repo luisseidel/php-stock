@@ -18,30 +18,68 @@
     <header>
         <nav>
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo center">
+                <ul class="left hide-on-med-and-down">
+                    <li>
+                        <a class="dropdown-trigger" href="#" data-target="dropdown2">
+                            Usuários
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul id="dropdown2" class="dropdown-content">
+                    <li><a href="/pages/usuarios/list.php">Cadastro Usuários</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">three</a></li>
+                </ul>
+
+                <a href="/pages/home.php" class="brand-logo center">
                     <img class="brand-logo center" src="/images/webpath-logo" style="max-width: 150px;">
                 </a>
+
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                     <i class="material-icons">menu</i>
                 </a>
+
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a href="../session/logout.php"> Sair</a></li>
+                    <li>
+                        <a href="../session/logout.php">
+                            Sair
+                            <i class="material-icons right">exit_to_app</i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
 
         <ul class="sidenav" id="mobile-demo">
-            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="../session/logout.php"> Sair</a></li>
+            <a href="#!" class="brand-logo center">
+                <img class="brand-logo center" src="/images/webpath-logo" style="max-width: 150px;">
+            </a>
+
+            <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown1">
+                    Usuários
+                    <i class="material-icons right">arrow_drop_down</i>
+                </a>
+            </li>
+
+            <li>
+                <a href="/pages/session/logout.php">
+                    Sair
+                    <i class="material-icons right">exit_to_app</i>
+                </a>
+            </li>
         </ul>
 
         <ul id="dropdown1" class="dropdown-content">
-            <li><a href="#!">one</a></li>
+            <li><a href="/pages/usuarios/list.php">Cadastro Usuários</a></li>
             <li><a href="#!">two</a></li>
             <li class="divider"></li>
             <li><a href="#!">three</a></li>
         </ul>
+
     </header>
 
     <main>
