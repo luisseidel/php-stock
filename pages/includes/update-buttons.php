@@ -2,16 +2,11 @@
                     <i class="material-icons left">arrow_back</i>
                     Voltar
                 </a>
-
-                <button type="submit" name="btn-salvar" class="btn waves-effect waves-light">
+                
+                <button type="submit" name="btn-editar" class="btn waves-effect waves-light">
                     <i class="material-icons left">save</i>
                     Salvar
                 </button>
-
-                <a href="" name="btn-limpar" class="btn yellow darken-4 waves-effect waves-light" onclick="cleanFormFields()">
-                <i class="material-icons left">clear_all</i>
-                    Limpar
-                </a>
 
                 <button type="submit" name="btn-excluir" class="btn red darken-4 waves-effect waves-light">
                     <i class="material-icons left">delete</i>

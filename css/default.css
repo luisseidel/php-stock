@@ -18,6 +18,10 @@ main input {
     color: white;
 }
 
+form input:disabled {
+    color: blanchedalmond !important;
+}
+
 .page-footer {
     background-color: #01252C !important;
     color: #81e291 !important;

@@ -6,7 +6,7 @@
             
             <form action="actions.php" method="POST">
                 <div class="input-field col s12">
-                    <i class="material-icons prefix">account_circle</i>
+                    <i class="material-icons prefix">title</i>
                     <input type="text" name="nome" id="nome" class="char-count" data-length="255">
                     <label for="nome">Nome</label>
                 </div>
@@ -23,7 +23,7 @@
                     <label for="nome">Senha</label>
                 </div>
 
-                <?php include_once '../includes/crud-buttons.php' ?>
+                <?php include_once '../includes/create-buttons.php' ?>
 
             </form>
         </div>
