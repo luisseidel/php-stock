@@ -19,5 +19,7 @@ Wamp, PHP 7.3, HTML 5, CSS 3, Materialize CSS, Javascript, Maria DB, Tippy, jQue
     4.3 Campos de nome, login e senha.
     4.4 Não deixar inserir caso já possua um user com mesmo login/email.
     4.5 Encriptar a senha.
+    4.6 Evitar SQL Injection
+    4.7 Evitar Cross site scripting
 
 5. Estilizar telas conforme necessário.
