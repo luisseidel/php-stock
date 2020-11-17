@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="/css/default.css" />
     <link rel="icon" type="image/png" href="/images/webpath-logo.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Software especialista em Controle de estoque">
+    <meta name="keywords" content="Estoque, Controle, Controle de Estoque">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Luis Guilherme Seidel">
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap">
